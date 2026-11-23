@@ -18,7 +18,7 @@ namespace Tyuiu.ZipunovIM.Sprint5.Task5.V15.Lib
                     foreach (string val in values)
                     {
                         double num = double.Parse(val.Replace(',', '.'), CultureInfo.InvariantCulture);
-                        if (num % 5 == 0 && num < res)
+                        if (num > 0 && num % 5 == 0 && num < res)
                         {
                             res = num;
                         }
